@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Linguagem do conteúdo da página. -->
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres. -->
+    <meta charset="UTF-8">
+
+    <!-- Fornece ao navegador instruções sobre como controlar as dimensões e a escala da página. -->
+    <!-- Para design responsivo. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Criar conta</title>
+</head>
+<body>
+    <div id="parallelogram"></div>
+    <!-- Seção genérica, usada quando não existe um elemento semântico mais específico para representá-lo. -->
+    <section>
+        <!--Envia a entrada do usuário a um servidor. -->
+        <form action="#" method="post">
+            <h1>Crie sua conta</h1>
+            <!-- Agrupar elementos em um formulário. -->
+            <fieldset>
+                <!-- Container genérico estilizável com CSS. -->
+                <!-- Usado quando não há outra tag container adequada. -->
+                <div class="container">
+                    <!-- Campo de entrada definido com tipo de entrada definido para texto. -->
+                    <!-- required - Indica que o preenchimento é obrtigatório. -->
+                    <input type="text" required name="name" autofocus>
+
+                    <!-- Representa uma legenda para um elemento-->
+                    <label>Nome</label>
+                </div>
+                <div class="container">
+
+                    <input type="text" required name="lastname" autofocus>
+
+                    <label>Sobrenome</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+                    <input type="email" required name="email">
+                    <label>E-mail</label>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+                    <input type="password" required name="password">
+                    <label>Senha</label>
+                </div>
+                <div class="container">
+                    <input type="password" required name="confirm">
+                    <label>Confirmar Senha</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div id="check">
+                    <input type="checkbox" required name="accept">
+                    <label>Aceitar os Termos de uso</label>
+                </div>
+                <!-- Cria um botão que envia os dados. -->
+                <button>Criar Conta</button>
+            </fieldset>
+            <!-- Link de redirecionamento. -->
+            <a href="#">Ler Termos de uso</a>
+        </form>
+        <img src="user.svg">
+    </section>
+</body>
+</html>
